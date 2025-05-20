@@ -2,11 +2,11 @@
 
 /* Variáveis */
 :root {
-    --primary-color: #026773;
-    --secondary-color: #3CA6A6;
-    --text-color: #024959;
-    --background-color: #F2E3D5;
-    --button-hover: #012E40;
+    --primary-color: #6e038f;
+    --secondary-color: #633f90;
+    --text-color: #a77fc8;
+    --background-color: #8528b7;
+    --button-hover: #630081;
     --font-body: "Chocolate Classical Sans", serif;
     --font-titulo: "Rakkas", serif;
 }
@@ -40,7 +40,7 @@ img {
 /* Cabeçalho */
 header  {
     background: var(--primary-color);
-    color: white;
+    color: rgb(69, 36, 83);
     text-align: center;
     padding: 20px;
 }
@@ -61,7 +61,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(66, 33, 74);
     text-decoration: none;
     font-weight: bold;
 }
@@ -72,7 +72,7 @@ nav ul li a:hover{
 
 /*Seções principais */
 .conteudo {
-    background: white;
+    background: rgb(60, 34, 73);
     padding: 20px;
     margin: 20px auto;
     width: 80%;
@@ -95,4 +95,26 @@ ul {
     padding: 10px;
     background: var(--secondary-color);
     color: var(--text-color);
+}
+/* código omitido */
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
 }
